@@ -77,8 +77,8 @@ public class ReportsCreateServlet extends HttpServlet {
             request.getSession().setAttribute("flush", "登録が完了しました。 ");
 
             response.sendRedirect(request.getContextPath() + "/reports/index");
-        }
-        }
+          }
+       }
     }
 
 }

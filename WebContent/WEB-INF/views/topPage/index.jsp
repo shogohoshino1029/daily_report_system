@@ -9,7 +9,7 @@
             </div>
         </c:if>
         <h2>日報管理システムへようこそ</h2>
-        <h3>【自分の日報　一覧】</h3>
+        <h3>【自分の日報一覧】</h3>
         <table id="report_list">
             <tbody>
                 <tr>
@@ -28,7 +28,6 @@
                 </c:forEach>
             </tbody>
         </table>
-
         <div id="pagination">
             （全 ${reports_count} 件）<br />
             <c:forEach var="i" begin="1" end="${((reports_count - 1) / 15) + 1}" step="1">
@@ -42,6 +41,6 @@
                 </c:choose>
             </c:forEach>
         </div>
-        <p><a href="<c:url value='/reports/new' />">新規日報の登録</a></p>
+
     </c:param>
 </c:import>

@@ -51,6 +51,9 @@ public class Report {
     @Column(name = "title", length = 255, nullable = false)
     private String title;
 
+    @Column(name = "client_name", length = 255, nullable = false)
+    private String client_name;
+
     @Lob
     @Column(name = "content", nullable = false)
     private String content;
@@ -91,6 +94,14 @@ public class Report {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getClient_name() {
+        return client_name;
+    }
+
+    public void setClient_name(String client_name) {
+        this.client_name = client_name;
     }
 
     public String getContent() {

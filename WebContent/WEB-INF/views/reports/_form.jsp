@@ -22,6 +22,10 @@
 <input type="text" name="title" value="${report.title}" />
 <br /><br />
 
+<label for="client_name">顧客名</label><br />
+<input type="text" name="client_name" value="${report.client_name}" />
+<br /><br />
+
 <label for="content">内容</label><br />
 <textarea name="content" rows="10" cols="50">${report.content}</textarea>
 <br /><br />
